@@ -1,6 +1,9 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom"
 import HomePage from "./pages/HomePage"
 import DefaultLayout from "./layout/DefaultLayout"
+import PageA from "./pages/PageA"
+import PageB from "./pages/PageB"
+import NavBar from "./layout/NavBar"
 export default function App() {
 
 
@@ -11,7 +14,9 @@ export default function App() {
         <Routes>
 
           <Route Component={DefaultLayout}>
+            <Route path="/" Component={NavBar} />
             <Route path="/" Component={HomePage} />
+
             <Route path="/pageA" Component={PageA} />
             <Route path="/pageB" Component={PageB} />
           </Route>

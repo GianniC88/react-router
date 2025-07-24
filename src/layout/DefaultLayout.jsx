@@ -1,7 +1,10 @@
+
 import { Outlet } from "react-router-dom";
-export default function () {
+import NavBar from "../pages/NavBar";
+export default function DefaultLayout() {
 	return (
 		<>
+			<NavBar />
 			<header>Header</header>
 			<Outlet />
 			<footer>Footer</footer>
@@ -9,4 +12,3 @@ export default function () {
 
 	)
 }
-import(Outlet)
