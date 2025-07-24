@@ -1,14 +1,30 @@
-import { useState } from 'react'
+import { BrowserRouter, Routes, Route } from "react-router-dom"
+import HomePage from "./pages/HomePage"
+import DefaultLayout from "./layout/DefaultLayout"
+export default function App() {
 
 
-function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
+      <BrowserRouter>
+        <Routes>
 
+          <Route Component={DefaultLayout}>
+            <Route path="/" Component={HomePage} />
+            <Route path="/pageA" Component={PageA} />
+            <Route path="/pageB" Component={PageB} />
+          </Route>
+
+
+        </Routes>
+
+      </BrowserRouter>
     </>
   )
+
 }
 
-export default App
+
+
+
