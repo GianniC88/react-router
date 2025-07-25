@@ -1,7 +1,7 @@
 
 import { Outlet } from "react-router-dom";
 import NavBar from "./NavBar";
-import HomePage from "../pages/HomePage";
+
 
 export default function DefaultLayout() {
 	return (
@@ -11,7 +11,7 @@ export default function DefaultLayout() {
 			<header>
 				<NavBar />
 			</header>
-			<HomePage />
+
 			<Outlet />
 			<footer>Footer</footer>
 		</>

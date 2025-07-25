@@ -14,7 +14,7 @@ export default function App() {
         <Routes>
 
           <Route Component={DefaultLayout}>
-            <Route path="/" Component={NavBar} />
+
             <Route path="/" Component={HomePage} />
 
             <Route path="/pageA" Component={PageA} />
