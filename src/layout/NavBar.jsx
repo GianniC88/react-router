@@ -3,10 +3,11 @@ export default function NavBar() {
 	return (
 		<>
 			<nav
-				className="nav justify-content-center ">
-				<NavLink className="nav-link" to="/">Home Page</NavLink>
-				<NavLink className="nav-link" to="pageA">pageA</NavLink>
-				<NavLink className="nav-link" to="pageB">PageB</NavLink>
+				className="nav justify-content-center p-3 display-6 d-flex justify-content-around " >
+				<NavLink className="nav-link text-primary   " to="/">Home Page</NavLink>
+				<NavLink className="nav-link text-primary" to="pageA">Biografia</NavLink>
+				<NavLink className="nav-link text-primary" to="pageB">Prodotti</NavLink>
+
 			</nav>
 		</>
 	)

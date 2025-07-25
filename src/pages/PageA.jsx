@@ -1,17 +1,34 @@
 export default function PageA() {
 	return (
 		<>
-			<div className="toast" role="alert" aria-live="assertive" aria-atomic="true">
-				<div className="toast-header">
-					<a></a>
-					<strong className="me-auto">Bootstrap</strong>
-					<small>11 mins ago</small>
-					<button type="button" className="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+			<section>
+				<div className="container">
+					<div className="row p-5">
+						<div className="col-8">
+
+
+							<div className="card  ">
+
+								<h1 className="bg-info">Chi Siamo</h1>
+
+								<h4 className="bg-light ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique nisi quas blanditiis fugiat laudantium officia iure animi consequuntur sapiente tenetur corrupti, tempore esse nemo non sequi error, facere provident ab!
+								</h4>
+
+
+							</div>
+
+							<div className="card">
+								<div><img src="/img/technology-online-shopping-business-concept-260nw-2496747375.PNG" alt="" /></div>
+							</div>
+						</div>
+
+					</div>
+
 				</div>
-				<div className="toast-body">
-					Hello, world! This is a toast message.
-				</div>
-			</div>
+
+
+			</section>
+
 		</>
 	)
 }

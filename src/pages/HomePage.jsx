@@ -1,4 +1,4 @@
-import NavBar from "../layout/NavBar";
+
 
 export default function HomePage() {
 	return (
@@ -6,11 +6,11 @@ export default function HomePage() {
 
 			<main>
 
-				<div className="p-5 mb-4 bg-light rounded-3">
-					<div className="container-fluid py-5">
+				<div className="p-5 mb-4 rounded-3">
+					<div className="container">
 						<img src="/img/technology-online-shopping-business-concept-260nw-2496747375.PNG" alt="e-commerce" />
 						<h1 className="display-5 fw-bold">KOOL e-commerce</h1>
-						<p className="col-md-8 fs-4">
+						<p className="col-md-8 fs-4 ">
 							Benvenuti
 						</p>
 

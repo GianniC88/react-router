@@ -3,7 +3,8 @@ import HomePage from "./pages/HomePage"
 import DefaultLayout from "./layout/DefaultLayout"
 import PageA from "./pages/PageA"
 import PageB from "./pages/PageB"
-import NavBar from "./layout/NavBar"
+
+import Footer from "./pages/Footer"
 export default function App() {
 
 
@@ -19,6 +20,7 @@ export default function App() {
 
             <Route path="/pageA" Component={PageA} />
             <Route path="/pageB" Component={PageB} />
+
           </Route>
 
 
