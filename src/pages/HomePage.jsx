@@ -1,3 +1,4 @@
+
 export default function HomePage() {
 	return (
 		<main>
@@ -9,9 +10,7 @@ export default function HomePage() {
 					<p className="col-md-8 fs-4">
 						Benvenuti
 					</p>
-					<button className="btn btn-primary btn-lg" type="button">
-						Example button
-					</button>
+
 				</div>
 			</div>
 		</main>
