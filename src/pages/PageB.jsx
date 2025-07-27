@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react"
+import { Link } from "react-router-dom";
 
 export default function PageB() {
 	const [products, setProducts] = useState([]);
@@ -35,12 +36,19 @@ export default function PageB() {
 					{products.map(product => (
 						<div key={product.id} className="col-md-4 mb-4">
 							<div className="card h-100">
-								<img
-									className="card-img-top"
-									src={product.image}
-									alt={product.title}
-									style={{ height: '200px', objectFit: 'contain' }}
-								/>
+
+
+								<Link
+
+									className="btn "
+									to={`/product/${product.id}`}
+									role="button"
+								>	<img
+										className="card-img-top"
+										src={product.image}
+										alt={product.title}
+										style={{ height: '200px', objectFit: 'contain' }}
+									/> </Link>
 								<div className="card-body d-flex flex-column">
 									<h5 className="card-title">{product.title}</h5>
 									<p className="card-text flex-grow-1">
@@ -53,6 +61,13 @@ export default function PageB() {
 										<span className="badge bg-primary">{product.category}</span>
 										<h6 className="text-success mt-2">${product.price}</h6>
 									</div>
+									<Link
+
+										className="btn btn-primary"
+										to={`/product/${product.id}`}
+										role="button"
+									>View</Link>
+
 								</div>
 							</div>
 						</div>
