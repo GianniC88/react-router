@@ -10,5 +10,15 @@ body {
 }
 
 .nav {
-  background-color: bisque;
+  background-color: rgb(242, 239, 234);
+  font-family: "Nerko One", cursive;
+}
+
+footer {
+  min-height: 150px;
+  background-color: black;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
 }

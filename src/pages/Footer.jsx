@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 
 export default function Footer() {
 	return (
-		<footer className="bg-dark text-white mt-auto">
+		<footer className=" text-white mt-auto ">
 			<div className="container py-4">
 				<div className="row">
 					<div className="col-md-6">
